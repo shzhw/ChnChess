@@ -10,7 +10,7 @@ CC.prototype={
   boardLeft:0,
   boardTop:0,
   imgSequence:[],
-  rootDir:"/images/",
+  rootDir:"./images/",
   player:0,//红
   _init:function(){
     var _self = this
