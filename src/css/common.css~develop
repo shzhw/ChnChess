@@ -1,0 +1,54 @@
+*{
+  padding:0;
+  margin: 0;
+}
+body{
+  font: 16px "微软雅黑";
+}
+input{
+  border:none;
+  outline:none;
+}
+ul,li{
+  list-style: none;
+}
+.afClear:after{
+  content:"";
+  display:block;
+  clear:both;
+  width:0;
+  height:0;
+}
+.bfTable:before{
+  content:"";
+  display:table;
+  width:0;
+  height:0;
+}
+.title{
+  height:20px;
+  line-height:20px;
+}
+#chessboard{
+  width:521px;
+  height:577px;
+  margin:0 auto;
+  background:url(../images/board.jpg) no-repeat 0 0;
+  position: relative;
+}
+#chessboard>img{
+  position:absolute;
+  z-index:0;
+  width:57px;
+  height:57px;
+}
+
+#test{
+  position:absolute;
+  background:#fff;
+  width:100%;
+  height:100%;
+  z-index:10;
+  top:0;
+  left:0;
+}
