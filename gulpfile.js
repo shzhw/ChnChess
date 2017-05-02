@@ -35,7 +35,7 @@ gulp.task("dealJs",function(){
     .pipe(connect.reload());
 
   gulp.src(["src/js/*.js","!src/js/*.min.js"])
-    // .pipe(uglify())
+    .pipe(uglify())
     .pipe(rename(function(path){
       path.basename += ".min"
     }))
@@ -52,7 +52,7 @@ gulp.task("dealJs",function(){
 //css 合并 压缩
 .task("dealCss",function(){
   gulp.src("src/css/*.css")
-    // .pipe(minCss())
+    .pipe(minCss())
     .pipe(rename(function(path){
       path.basename += ".min"
     }))
