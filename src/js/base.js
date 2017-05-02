@@ -1,3 +1,4 @@
+"use strict";
 var CC = function(){
   this._init();
 }
@@ -13,6 +14,7 @@ CC.prototype={
   player:0,//红
   _init:function(){
     var _self = this
+    //辅助数组
     this.fakeBoard = [
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
